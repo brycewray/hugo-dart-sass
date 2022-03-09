@@ -3,7 +3,7 @@
 echo "Install Dart Sass Embedded..."
 
 # This is in Vercel's PATH.
-BIN_DIR=${pwd}/.bin
+BIN_DIR=${pwd}/bin
 DARTSASS_VERSION=1.49.9
 
 echo "pwd output is:"
