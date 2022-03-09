@@ -3,7 +3,12 @@
 echo "Install Dart Sass Embedded..."
 
 echo "Getting Vercel's PATH..."
+echo "First pwd"
 pwd
+echo "Then pwd -P"
+pwd -P
+echo "Then pwd -L"
+pwd -L
 
 # This is in Vercel's PATH.
 BIN_DIR=/vercel/path0/opt/build/repo/node_modules/.bin
