@@ -3,7 +3,7 @@
 echo "Install Dart Sass Embedded..."
 
 # This should be in the PATH.
-BIN_DIR=/opt/buildhome/.gimme/.bin
+BIN_DIR=/usr/local/bin
 # @bep original was:
 # BIN_DIR=/opt/build/repo/node_modules/.bin
 DARTSASS_VERSION=1.49.9
