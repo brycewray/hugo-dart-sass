@@ -2,16 +2,11 @@
 
 echo "Install Dart Sass Embedded..."
 
-echo "Getting Vercel's PATH..."
-echo "First pwd"
-pwd
-echo "Then pwd -P"
-pwd -P
-echo "Then pwd -L"
-pwd -L
+echo "Search for Dart Sass Embedded"
+yum search dart-sass-embedded
 
 # This is in Vercel's PATH.
-BIN_DIR=/vercel/path0/opt/build/repo/node_modules/.bin
+BIN_DIR=/opt/build/repo/node_modules/.bin
 DARTSASS_VERSION=1.49.9
 
 mkdir -p $BIN_DIR
