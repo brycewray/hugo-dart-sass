@@ -2,8 +2,8 @@
 
 echo "Install Dart Sass Embedded..."
 
-echo "Search for Dart Sass Embedded"
-yum search dart-sass-embedded
+echo "Let's see what they have."
+yum list
 
 # This is in Vercel's PATH.
 BIN_DIR=/opt/build/repo/node_modules/.bin
