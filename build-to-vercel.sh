@@ -19,9 +19,8 @@ mv sass_embedded/dart-sass-embedded $BIN_DIR
 
 rm -rf sass_embedded*;
 
-echo "List Bin Dir..."
-
-ls $BIN_DIR;
+# echo "List Bin Dir..."
+# ls $BIN_DIR;
 
 dart-sass-embedded --version
 
