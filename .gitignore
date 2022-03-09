@@ -16,3 +16,8 @@
 # vendor/
 
 resources/_gen/
+
+start.sh
+build.sh
+testbuild.sh
+push.sh
