@@ -2,11 +2,8 @@
 
 echo "Install Dart Sass Embedded..."
 
-echo "Let's see what's in Amazon Linux Extras."
-amazon-linux-extras
-
 # This is in Vercel's PATH.
-BIN_DIR=/opt/build/repo/node_modules/.bin
+BIN_DIR=/vercel/path0/node_modules/.bin
 DARTSASS_VERSION=1.49.9
 
 mkdir -p $BIN_DIR
