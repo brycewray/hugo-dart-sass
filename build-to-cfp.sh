@@ -3,7 +3,7 @@
 echo "Install Dart Sass Embedded..."
 
 # This should be in the PATH.
-BIN_DIR=${pwd}/.bin
+BIN_DIR=${pwd}/node_modules/.bin
 DARTSASS_VERSION=1.49.9
 
 echo "pwd output is:"
