@@ -3,7 +3,7 @@
 echo "Install Dart Sass Embedded..."
 
 echo "Let's see what's in Amazon Linux Extras."
-yum list
+amazon-linux-extras
 
 # This is in Vercel's PATH.
 BIN_DIR=/opt/build/repo/node_modules/.bin
