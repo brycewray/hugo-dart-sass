@@ -2,7 +2,7 @@
 
 echo "Install Dart Sass Embedded..."
 
-echo "Let's see what they have."
+echo "Let's see what's in Amazon Linux Extras."
 yum list
 
 # This is in Vercel's PATH.
