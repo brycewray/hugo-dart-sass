@@ -6,7 +6,7 @@ echo "Install Dart Sass Embedded..."
 BIN_DIR=/opt/buildhome/.binrc/bin
 # @bep original was:
 # BIN_DIR=/opt/build/repo/node_modules/.bin
-DARTSASS_VERSION=1.49.9
+DARTSASS_VERSION=1.53.0
 
 # echo "Path is $PATH"
 

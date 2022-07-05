@@ -1,4 +1,5 @@
 baseURL="https://example.org"
+# Makes sure this won't show anything else
 
 disableKinds = ["page", "section", "taxonomy", "term"]
 
