@@ -13,6 +13,8 @@ variables:
   CONSUMER_SECRET: $CONSUMER_SECRET
   GIT_DEPTH: 0
   # WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
+  # PATH includes /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
+  BIN_DIR: /usr/local/sbin
 
 deploySite:
   stage: deploy
@@ -26,9 +28,14 @@ deploySite:
   script:
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
     - dpkg -i hugo*.deb
+    - mkdir -p $BIN_DIR
     - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
     - tar -xvf sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
     - echo "PATH IS ${PATH}"
-    # - sass_embedded/dart-sass-embedded --version
-    # - hugo --gc --minify
-    # - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - mv sass_embedded/dart-sass-embedded ${BIN_DIR}
+    - rm -rf sass_embedded*
+    - echo "List Bin Dir..."
+    - ls ${BIN_DIR}
+    #- dart-sass-embedded --version
+    #- hugo --gc --minify
+    #- netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
