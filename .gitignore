@@ -21,6 +21,5 @@ start.sh
 build.sh
 testbuild.sh
 push.sh
-.vercel
 
 .env
