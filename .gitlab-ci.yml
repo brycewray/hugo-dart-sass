@@ -44,4 +44,4 @@ deploySite:
     - dart-sass-embedded --version
     - hugo --gc --minify
     #- netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
-    - VERCEL_ORG_ID=$VERCEL_ORG_ID VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID vercel --token $VERCEL_TOKEN_HUGO_SITE  --prod
+    - VERCEL_ORG_ID=$VERCEL_ORG_ID VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID vercel --confirm -t --token $VERCEL_TOKEN_HUGO_SITE --prod
