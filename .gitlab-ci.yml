@@ -26,6 +26,7 @@ deploySite:
     name: production
     url: https://hugo-site-vercel.vercel.app
   script:
+    - npm i -g netlify-cli
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
     - dpkg -i hugo*.deb
     - mkdir -p $BIN_DIR
