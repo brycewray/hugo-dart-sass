@@ -25,7 +25,7 @@ deploySite:
     url: https://hugo-site-vercel.vercel.app
   script:
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
+    - dpkg -i hugo*.deb
     - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
     - tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
     - sass_embedded/dart-sass-embedded --version
