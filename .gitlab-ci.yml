@@ -28,6 +28,7 @@ deploySite:
     - dpkg -i hugo*.deb
     - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
     - tar -xvf sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - sass_embedded/dart-sass-embedded --version
-    - hugo --gc --minify
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - echo "PATH IS ${PATH}"
+    # - sass_embedded/dart-sass-embedded --version
+    # - hugo --gc --minify
+    # - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
