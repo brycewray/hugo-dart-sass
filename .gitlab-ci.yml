@@ -34,8 +34,8 @@ deploySite:
     - echo "PATH IS ${PATH}"
     - mv sass_embedded/dart-sass-embedded ${BIN_DIR}
     - rm -rf sass_embedded*
-    - echo "List Bin Dir..."
-    - ls ${BIN_DIR}
-    #- dart-sass-embedded --version
-    #- hugo --gc --minify
-    #- netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    #- echo "List Bin Dir..."
+    #- ls ${BIN_DIR}
+    - dart-sass-embedded --version
+    - hugo --gc --minify
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
